@@ -61,9 +61,6 @@ Plugin 'tpope/vim-surround.git'
 " Vim rails
 Plugin 'tpope/vim-rails'
 
-" Adding editor config
-Plugin 'editorconfig/editorconfig-vim'
-
 " Themes to install
 " ======================================
 
