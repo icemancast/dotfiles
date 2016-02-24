@@ -5,7 +5,7 @@
 Plugin 'gmarik/Vundle.vim'
 
 " Nerdtree
-" Plugin 'scrooloose/nerdtree.git'
+Plugin 'scrooloose/nerdtree.git'
 
 " NerdCommenter
 Plugin 'scrooloose/nerdcommenter.git'
@@ -60,6 +60,9 @@ Plugin 'tpope/vim-surround.git'
 
 " Vim rails
 Plugin 'tpope/vim-rails'
+
+" Editor Config plugin
+Plugin 'editorconfig/editorconfig-vim'
 
 " Themes to install
 " ======================================
