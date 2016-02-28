@@ -1,60 +1,94 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+"===================================================="
+" Plugin settings
+"===================================================="
 
-" Leader switch
-let mapleader = ","
+set nocompatible              					" be iMproved, required
+filetype off                  					" required
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => set the runtime path to include Vundle and initialize
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set vundle plugin
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use spaces instead of tabs
-set expandtab
+" => plugin installs
+so ~/.vim/plugins.vim
 
-" Be smart when using tabs ;)
-set smarttab
+" => All of your Plugins must be added before the following line
+call vundle#end()            					" required
+filetype plugin indent on    					" required
 
-" 1 tab == 2 spaces
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+"|
+" ===> CTRL+p
+"|
+let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'	" settings Ignore the following directories for CTRL+P
 
-" Linebreak on 500 characters
-set lbr
-set tw=500
+"|
+" ===> NerdTree
+"|
+let NERDTreeHijackNetrw = 0					" Remove dash so vinegar is used instead
 
-"set ai "Auto indent
-"set si "Smart indent
-set wrap "Wrap lines
+" => all mappings
+so ~/.vim/mappings.vim
 
-" Command bar height
-set cmdheight=2
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Files, backups and undo
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup off, since most stuff is in SVN, git et.c anyway...
-set nobackup
-set nowb
-set noswapfile
 
-" Plugins Installed
-" ======================================================
-source ~/.plugins
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+"===================================================="
+" Global configs
+"===================================================="
 
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
+syntax enable
 
-" My settings
-" ======================================================
-source ~/.settings
+set backspace=indent,eol,start
+
+" => Change map leader to comma
+let mapleader = ','
+
+" => Set line numbers
+set number
+
+" => Open all buffers in tabs
+:au BufAdd,BufNewFile * nested tab sball
+
+
+
+
+"===================================================="
+" Visuals
+"===================================================="
+
+colorscheme atom-dark
+set t_CO=256
+
+
+
+
+"===================================================="
+" Search
+"===================================================="
+
+set hlsearch
+set incsearch
+
+
+
+
+"===================================================="
+" Split management
+"===================================================="
+
+" => Split view setttings
+set splitbelow
+set splitright
+
+
+
+
+"===================================================="
+" Auto commands`
+"===================================================="
+
+" Automatically source vimrc on save
+augroup autosourcing
+	autocmd!
+	autocmd BufWritePost .vimrc source %
+augroup END
