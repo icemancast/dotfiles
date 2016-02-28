@@ -3,5 +3,5 @@
 # cp user/.bash_profile ~/.bash_profile
 # cp ssh/config ~/.ssh/config
 cp vim/.vimrc ~/.vimrc
-cp vim/.plugins ~/.plugins
-cp vim/.settings ~/.settings
+cp vim/plugins.vim ~/.vim/plugins.vim
+cp vim/settings.vim ~/.vim/settings.vim
