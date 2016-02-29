@@ -26,7 +26,14 @@ let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'	" settings Ignore the f
 "|
 let NERDTreeHijackNetrw = 0					" Remove dash so vinegar is used instead
 
-" => all mappings
+
+
+
+"===================================================="
+" Mappings
+"===================================================="
+
+" => Mappings
 so ~/.vim/mappings.vim
 
 
@@ -38,16 +45,14 @@ so ~/.vim/mappings.vim
 
 syntax enable
 
-set backspace=indent,eol,start
-
 " => Change map leader to comma
 let mapleader = ','
 
-" => Set line numbers
-set number
-
 " => Open all buffers in tabs
-:au BufAdd,BufNewFile * nested tab sball
+" :au BufAdd,BufNewFile * nested tab sball
+
+" => Settings for vim
+so ~/.vim/settings.vim
 
 
 
@@ -84,7 +89,7 @@ set splitright
 
 
 "===================================================="
-" Auto commands`
+" Auto commands
 "===================================================="
 
 " Automatically source vimrc on save
@@ -92,3 +97,17 @@ augroup autosourcing
 	autocmd!
 	autocmd BufWritePost .vimrc source %
 augroup END
+
+
+
+
+"===================================================="
+" Notes and tips
+"===================================================="
+
+" - ci" to change text in between quotes
+" - vi" select between quotes
+" - ctrl+] jump to method definition when cursor is on method
+" - ctrl+^ to jump back
+" - :Ag "string" search for string in project
+" - :Gsearch for find and replace
