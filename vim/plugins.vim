@@ -27,3 +27,7 @@ Plugin 'rking/ag.vim'
 
 " Grep search and replace
 Plugin 'skwp/greplace.vim'
+
+" Line tabs up
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown' " markdown syntax

@@ -26,6 +26,11 @@ let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'	" settings Ignore the f
 "|
 let NERDTreeHijackNetrw = 0					" Remove dash so vinegar is used instead
 
+"|
+" ===> Disable folding for vim markdown
+"|
+let g:vim_markdown_folding_disabled = 1
+
 
 
 
