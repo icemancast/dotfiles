@@ -26,8 +26,8 @@ nmap <D-e> :CtrlPMRUFiles<cr>
 map <Leader>/ <Leader>ci
 
 " => Copy and past all
-nnoremap <Leader>y :w !pbcopy<cr><cr>
-nnoremap <Leader>p :r !pbpaste<cr>
+nnoremap <leader>y :w !pbcopy<cr><cr>
+nnoremap <leader>p :r !pbpaste<cr>
 
 " => Tabs configuration
 nmap ( :bprev<cr>

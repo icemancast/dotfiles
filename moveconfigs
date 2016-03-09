@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# cp user/.bash_profile ~/.bash_profile
+# ln -s ~/dotfiles/user/.bash_profile ~/.bash_profile
 # cp ssh/config ~/.ssh/config
-cp vim/.vimrc ~/.vimrc
-cp vim/plugins.vim ~/.vim/plugins.vim
-cp vim/settings.vim ~/.vim/settings.vim
+ln -s ~/dotfiles/vim/.vimrc ~/.vimrc
+# cp vim/plugins.vim ~/.vim/plugins.vim
+# cp vim/settings.vim ~/.vim/settings.vim

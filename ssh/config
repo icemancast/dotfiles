@@ -1,14 +1,11 @@
-Host guardiantelecom
-  HostName server-04.bexarcreative.com
-  User forge
 Host bluestar
   HostName bluestar.webfactional.com
   User bluestar
 Host echo_staging
-  HostName 104.131.114.204 
+  HostName 104.131.114.204
   User icemancast
 Host echo_production
-  HostName 107.170.51.205 
+  HostName 107.170.51.205
   User icemancast
 Host personal
   HostName 104.131.180.59
