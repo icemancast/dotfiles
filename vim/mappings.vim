@@ -23,11 +23,11 @@ nmap <C-R> :CtrlPBufTag<cr>
 nmap <D-e> :CtrlPMRUFiles<cr>
 
 " => Comment out line
-map <Leader>/ <Leader>ci
+nmap <Leader>/ <Leader>ci
 
 " => Copy and past all
-nnoremap <leader>y :w !pbcopy<cr><cr>
-nnoremap <leader>p :r !pbpaste<cr>
+nmap <leader>y :w !pbcopy<cr><cr>
+nmap <leader>p :r !pbpaste<cr>
 
 " => Tabs configuration
 nmap ( :bprev<cr>

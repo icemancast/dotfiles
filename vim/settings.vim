@@ -32,3 +32,8 @@ set smarttab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
+
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+" Add eslint to vim for checking syntax
+let g:syntastic_javascript_checkers = ['eslint']

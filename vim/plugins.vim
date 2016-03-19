@@ -31,3 +31,6 @@ Plugin 'skwp/greplace.vim'
 " Line tabs up
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown' " markdown syntax
+
+" Plugin for jsx indenting
+Plugin 'mxw/vim-jsx'
