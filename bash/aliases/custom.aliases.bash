@@ -36,3 +36,39 @@ alias gm="git merge $1"
 
 # SSH alias
 alias ssh-compile="echo -n > ~/.ssh/config && cat ~/.ssh/config.d/* > ~/.ssh/config"
+
+# Client specific
+alias evm="cd ~/vps/sites/clients/evermarket/App/EverMarketMobile; ll; pwd"
+alias evm-start="evm; react-native start"
+alias evm-open="evm; open ~/vps/sites/clients/evermarket/App/EverMarketMobile/ios/EverMarketMobile.xcodeproj; mvi ."
+alias emv="evm" # Always mispelled
+
+# Variables
+vps_path='/Users/icemancast/vps'
+# SSH alias
+
+# Alias Functions
+function _cd_site() {
+  if [ "$#" -eq 1 ]; then
+    cd ~/vps/sites/$1;
+  else
+    cd ~/vps/sites/$1/$2.dev/$3;
+  fi
+  pwd && ll;
+}
+
+function _cd_wp() {
+  if [ "$#" -eq 0 ]; then
+    cd wp-content/themes/;
+  else
+    cd wp-content/themes/$1;
+  fi
+  pwd && ll;
+}
+
+function _create_site() {
+  if [ "${PWD}" != $vps_path ]; then
+    cd ~/vps
+  fi
+  create-site
+}
