@@ -34,3 +34,9 @@ Plugin 'plasticboy/vim-markdown' " markdown syntax
 
 " Plugin for jsx indenting
 Plugin 'mxw/vim-jsx'
+
+" Plugin for snippets
+Plugin 'msanders/snipmate.vim'
+
+" Plugin for surround
+Plugin 'tpope/vim-surround'

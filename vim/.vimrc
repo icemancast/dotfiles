@@ -113,3 +113,5 @@ augroup END
 " - ctrl+^ to jump back
 " - :Ag "string" search for string in project
 " - :Gsearch for find and replace
+" - <Leader>lm for laravel - php artisam make:
+" - <Leader>lr for laravel - edit routes file

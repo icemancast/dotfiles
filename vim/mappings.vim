@@ -35,3 +35,11 @@ nmap ) :bnext<cr>
 
 " => Ctags
 nmap <Leader>f :tag<space>
+
+" => Laravel Specific
+" ===============================================
+nmap <Leader>lr :e app/Http/routes.php<cr>
+nmap <Leader>lm :!php artisan make:
+nmap <Leader><Leader>m :e app/Models<cr>
+nmap <Leader><Leader>v :e resources/views<cr>
+nmap <Leader><Leader>c :e app/Http/Controllers<cr>
