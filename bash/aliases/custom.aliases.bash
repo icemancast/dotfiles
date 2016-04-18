@@ -15,9 +15,8 @@ alias clients='_cd_site clients'
 alias personal='_cd_site personal $1'
 alias echods='_cd_site echods $1'
 alias codeup="cd ~/Documents/codeup; ll"
-alias bexar='_cd_site bexarcreative $1'
-alias bear='bexar'
-alias vps="cd ~/vps; ll;"
+alias vps="cd ~/vm; ll;"
+alias vm="cd ~/vm; ll; pwd"
 alias vl="cd ~/vagrant-lamp; ll; pwd"
 alias wpt='_cd_wp'
 
@@ -38,21 +37,22 @@ alias gm="git merge $1"
 alias ssh-compile="echo -n > ~/.ssh/config && cat ~/.ssh/config.d/* > ~/.ssh/config"
 
 # Client specific
-alias evm="cd ~/vps/sites/clients/evermarket/App/EverMarketMobile; ll; pwd"
+alias evm="cd ~/vm/sites/clients/evermarket/App/EverMarketMobile; ll; pwd"
 alias evm-start="evm; react-native start"
-alias evm-open="evm; open ~/vps/sites/clients/evermarket/App/EverMarketMobile/ios/EverMarketMobile.xcodeproj; mvi ."
+alias evm-open="evm; open ~/vm/sites/clients/evermarket/App/EverMarketMobile/ios/EverMarketMobile.xcodeproj; mvi ."
+alias evm-web="cd ~/vm/sites/clients/evermarket/EvermarketWeb/Source; sudo http-server -p 443 -S -C ~/vm/sites/clients/evermarket/source_files/cert.pem  -K ~/vm/sites/clients/evermarket/source_files/key.pem"
 alias emv="evm" # Always mispelled
 
 # Variables
-vps_path='/Users/icemancast/vps'
+vm_path='/Users/icemancast/vm'
 # SSH alias
 
 # Alias Functions
 function _cd_site() {
   if [ "$#" -eq 1 ]; then
-    cd ~/vps/sites/$1;
+    cd ~/vm/sites/$1;
   else
-    cd ~/vps/sites/$1/$2.dev/$3;
+    cd ~/vm/sites/$1/$2.dev/$3;
   fi
   pwd && ll;
 }
@@ -67,8 +67,8 @@ function _cd_wp() {
 }
 
 function _create_site() {
-  if [ "${PWD}" != $vps_path ]; then
-    cd ~/vps
+  if [ "${PWD}" != $vm_path ]; then
+    cd ~/vm
   fi
   create-site
 }
