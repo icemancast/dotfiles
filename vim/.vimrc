@@ -59,6 +59,10 @@ so ~/.vim/settings.vim
 
 " => Mappings
 so ~/.vim/mappings.vim
+
+
+
+
 "===================================================="
 " Visuals
 "===================================================="
@@ -115,3 +119,5 @@ augroup END
 " - :Gsearch for find and replace
 " - <Leader>lm for laravel - php artisam make:
 " - <Leader>lr for laravel - edit routes file
+" - <Leader>fs for full screen split
+" - <Leader>= for back to normal scren split

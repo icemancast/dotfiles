@@ -13,6 +13,8 @@ nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
+nmap <Leader>fs <C-W><bar>
+nmap <Leader>= <C-W>=
 " nmap <C><bar> <C-W><bar>
 
 " => Toggle nerd tree easier
