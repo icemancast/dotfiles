@@ -16,22 +16,6 @@ so ~/.vim/plugins.vim
 call vundle#end()            					" required
 filetype plugin indent on    					" required
 
-"|
-" ===> CTRL+p
-"|
-let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'	" settings Ignore the following directories for CTRL+P
-
-"|
-" ===> NerdTree
-"|
-let NERDTreeHijackNetrw = 0					" Remove dash so vinegar is used instead
-
-"|
-" ===> Disable folding for vim markdown
-"|
-let g:vim_markdown_folding_disabled = 1
-
-
 
 
 

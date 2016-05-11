@@ -36,6 +36,9 @@ alias gm="git merge $1"
 # SSH alias
 alias ssh-compile="echo -n > ~/.ssh/config && cat ~/.ssh/config.d/* > ~/.ssh/config"
 
+# Docker commands
+alias dv="_docker_env $1"
+
 # Client specific
 alias evm="cd ~/vm/sites/clients/evermarket/App/EverMarketMobile; ll; pwd"
 alias evm-start="evm; react-native start"
@@ -47,7 +50,8 @@ alias emv="evm" # Always mispelled
 vm_path='/Users/icemancast/vm'
 # SSH alias
 
-# Alias Functions
+# Alias Functions ============================
+# Enter client site if param exists
 function _cd_site() {
   if [ "$#" -eq 1 ]; then
     cd ~/vm/sites/$1;
@@ -57,6 +61,7 @@ function _cd_site() {
   pwd && ll;
 }
 
+# Enter theme directory once inside
 function _cd_wp() {
   if [ "$#" -eq 0 ]; then
     cd wp-content/themes/;
@@ -66,9 +71,17 @@ function _cd_wp() {
   pwd && ll;
 }
 
+# Create site go to vm folder if needed
 function _create_site() {
   if [ "${PWD}" != $vm_path ]; then
     cd ~/vm
   fi
   create-site
+}
+
+# Start docker machine
+function _docker_env() {
+  if [ "$#" -eq 1 ]; then
+    eval $(docker-machine env $1)
+  fi
 }

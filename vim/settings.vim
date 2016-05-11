@@ -40,6 +40,18 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 " => CTRL + P in current directory if not then .git ancestor
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$|bower_components|node_modules|tmp|_build'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+
+"|
+" ===> NerdTree
+"|
+let NERDTreeHijackNetrw = 0					" Remove dash so vinegar is used instead
+
+"|
+" ===> Disable folding for vim markdown
+"|
+let g:vim_markdown_folding_disabled = 1
 
 " => snipmate settings
 let g:snippets_dir='~/.vim/snippets'

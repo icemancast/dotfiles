@@ -8,7 +8,7 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'scrooloose/nerdtree'
 
 " Control p find files
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Editor config file plugin
 Plugin 'editorconfig/editorconfig-vim'
