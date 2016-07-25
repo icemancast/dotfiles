@@ -6,6 +6,8 @@ alias cs='_create_site'
 alias sc='cs'
 alias mvi='mvim -v'
 
+alias lsc='cd ~/vm; ansible-playbook ansible/playbooks/vagrant/site/php.yml'
+
 # Change directories
 alias .="cd .."
 alias ..="cd ../.."
@@ -38,6 +40,7 @@ alias ssh-compile="echo -n > ~/.ssh/config && cat ~/.ssh/config.d/* > ~/.ssh/con
 
 # Docker commands
 alias dv="_docker_env $1"
+alias dssh="docker exec -it $1 bash"
 
 # Client specific
 alias evm="cd ~/vm/sites/clients/evermarket/App/EverMarketMobile; ll; pwd"

@@ -1,4 +1,5 @@
 alias mvim='/Applications/MacVim.app/Contents/MacOS/MacVim'
+export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 
 # function for branch name
 parse_git_branch() {
