@@ -37,3 +37,14 @@ Plugin 'mxw/vim-jsx'
 
 " Plugin for surround
 Plugin 'tpope/vim-surround'
+
+" Plugin for supertabbing
+Plugin 'ervandew/supertab'
+
+" Plugins for snippets
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+
+" Optional:
+Plugin 'honza/vim-snippets'

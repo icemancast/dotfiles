@@ -28,10 +28,16 @@ set expandtab
 " => Be smart when using tabs ;)
 set smarttab
 
-" => 1 tab == 4 spaces
+" => 1 ktab == 4 spaces
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
+
+" => Write to file automatically
+set autowriteall
+
+" => Set autocomplete
+set complete=.,w,b,u
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
@@ -53,5 +59,6 @@ let NERDTreeHijackNetrw = 0					" Remove dash so vinegar is used instead
 "|
 let g:vim_markdown_folding_disabled = 1
 
-" => snipmate settings
-let g:snippets_dir='~/.vim/snippets'
+"|
+" ===>
+"|
