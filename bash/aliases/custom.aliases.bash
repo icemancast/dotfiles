@@ -40,7 +40,7 @@ alias ssh-compile="echo -n > ~/.ssh/config && cat ~/.ssh/config.d/* > ~/.ssh/con
 
 # Docker commands
 alias dv="_docker_env $1"
-alias dssh="docker exec -it $1 bash"
+alias dssh="_docker_ssh $1"
 
 # Client specific
 alias evm="cd ~/vm/sites/clients/evermarket/App/EverMarketMobile; ll; pwd"
@@ -86,5 +86,12 @@ function _create_site() {
 function _docker_env() {
   if [ "$#" -eq 1 ]; then
     eval $(docker-machine env $1)
+  fi
+}
+
+# SSH to docker
+function _docker_ssh() {
+  if [ "$#" -eq 1 ]; then
+    docker exec -it $1 bash
   fi
 }
