@@ -1,4 +1,4 @@
-" let Vundle manage Vundle, required
+
 Plugin 'VundleVim/Vundle.vim'
 
 " Look in current directory
@@ -48,3 +48,6 @@ Plugin 'garbas/vim-snipmate'
 
 " Optional:
 Plugin 'honza/vim-snippets'
+
+" PHP vim
+Plugin 'StanAngeloff/php.vim'

@@ -38,6 +38,10 @@ nmap ) :bnext<cr>
 " => Ctags
 nmap <Leader>f :tag<space>
 
+" => Sort by length
+"http://stackoverflow.com/questions/11531073/how-do-you-sort-a-range-of-lines-by-length
+vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" }'<cr>
+
 " => Laravel Specific
 " ===============================================
 nmap <Leader>lr :e app/Http/routes.php<cr>
