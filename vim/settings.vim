@@ -6,6 +6,7 @@ set backspace=indent,eol,start
 
 " => Set current cursor line
 set cursorline
+set cursorcolumn
 
 " => Plugin settings for syntastic
 set statusline+=%#warningmsg#
