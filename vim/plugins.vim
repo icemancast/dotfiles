@@ -1,4 +1,3 @@
-
 Plugin 'VundleVim/Vundle.vim'
 
 " Look in current directory
@@ -30,10 +29,10 @@ Plugin 'skwp/greplace.vim'
 
 " Line tabs up
 Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown' " markdown syntax
+" Plugin 'plasticboy/vim-markdown' " markdown syntax
 
 " Plugin for jsx indenting
-Plugin 'mxw/vim-jsx'
+" Plugin 'mxw/vim-jsx'
 
 " Plugin for surround
 Plugin 'tpope/vim-surround'
@@ -47,7 +46,11 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 
 " Optional:
-Plugin 'honza/vim-snippets'
+" Plugin 'honza/vim-snippets'
 
 " PHP vim
-Plugin 'StanAngeloff/php.vim'
+" Plugin 'StanAngeloff/php.vim'
+
+" Airline tab plugin
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'

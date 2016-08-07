@@ -61,5 +61,6 @@ let NERDTreeHijackNetrw = 0					" Remove dash so vinegar is used instead
 let g:vim_markdown_folding_disabled = 1
 
 "|
-" ===>
+" ===> Airline turn on top tabs
 "|
+let g:airline#extensions#tabline#enabled = 1

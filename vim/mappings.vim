@@ -8,6 +8,12 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 " => Remove search hilight
 nmap <Leader><space> :nohlsearch<cr>
 
+" => Close current buffer
+nmap <Leader>c :bd<cr>
+
+" => Close all buffers open tree
+"nmap <Leader>cc :NERDTreeClose<bar>:bufdo bd<cr>-
+
 " => Map vertical split navigation
 nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
