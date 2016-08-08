@@ -18,7 +18,7 @@ Plugin 'scrooloose/syntastic'
 " Nerd commenter for quick commenting
 Plugin 'scrooloose/nerdcommenter'
 
-" Buff tab line
+" Buff tab line use instead of airline
 Plugin 'ap/vim-buftabline'
 
 " AG searching
@@ -29,15 +29,11 @@ Plugin 'skwp/greplace.vim'
 
 " Line tabs up
 Plugin 'godlygeek/tabular'
-" Plugin 'plasticboy/vim-markdown' " markdown syntax
-
-" Plugin for jsx indenting
-" Plugin 'mxw/vim-jsx'
 
 " Plugin for surround
 Plugin 'tpope/vim-surround'
 
-" Plugin for supertabbing
+" Plugin for tab completion
 Plugin 'ervandew/supertab'
 
 " Plugins for snippets
@@ -45,12 +41,14 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 
-" Optional:
-" Plugin 'honza/vim-snippets'
+" Git wrapper for vim
+Plugin 'tpope/vim-fugitive'
 
-" PHP vim
-" Plugin 'StanAngeloff/php.vim'
+" Inline git gutter
+Plugin 'airblade/vim-gitgutter'
 
-" Airline tab plugin
-"Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-airline/vim-airline-themes'
+" Code syntax library
+Plugin 'sheerun/vim-polyglot'
+
+" Vim themes
+Plugin 'flazz/vim-colorschemes'
