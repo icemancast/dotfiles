@@ -49,6 +49,3 @@ Plugin 'airblade/vim-gitgutter'
 
 " Code syntax library
 Plugin 'sheerun/vim-polyglot'
-
-" Vim themes
-Plugin 'flazz/vim-colorschemes'
