@@ -51,7 +51,7 @@ so ~/.vim/mappings.vim
 " Visuals
 "===================================================="
 
-colorscheme atom-dark
+colorscheme onedark
 set t_CO=256
 
 
