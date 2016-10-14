@@ -49,3 +49,10 @@ Plugin 'airblade/vim-gitgutter'
 
 " Code syntax library
 Plugin 'sheerun/vim-polyglot'
+
+" Nova theme
+Plugin 'trevordmiller/nova-vim'
+
+" JSX hilighting
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'

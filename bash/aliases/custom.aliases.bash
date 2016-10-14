@@ -42,6 +42,8 @@ alias evm-open='evm; open ~/vm/sites/clients/evermarket/App/EverMarketMobile/ios
 alias evm-web='cd ~/vm/sites/clients/evermarket/EvermarketWeb/Source; sudo http-server -p 443 -S -C ~/vm/sites/clients/evermarket/source_files/cert.pem  -K ~/vm/sites/clients/evermarket/source_files/key.pem'
 alias emv='evm' # Always mispelled
 
+alias behat='vendor/bin/behat'
+
 # Alias Functions ============================
 # Enter client site if param exists
 function _cd_project() {
