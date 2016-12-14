@@ -44,6 +44,9 @@ alias emv='evm' # Always mispelled
 
 alias behat='vendor/bin/behat'
 
+alias msv-start='docker-compose run --service-ports --rm web'
+alias msv-run='docker-compose run --rm web bundle exec'
+
 # Alias Functions ============================
 # Enter client site if param exists
 function _cd_project() {
