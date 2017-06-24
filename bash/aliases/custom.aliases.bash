@@ -1,4 +1,3 @@
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias ll='ls -lahG'
 
 # Macvim inside terminal
@@ -45,7 +44,7 @@ alias emv='evm' # Always mispelled
 alias behat='vendor/bin/behat'
 
 alias msv-start='docker-compose run --service-ports --rm web'
-alias msv-run='docker-compose run --rm web bundle exec'
+alias msv-run='docker-compose run --rm web bundle exec $1'
 
 # Alias Functions ============================
 # Enter client site if param exists
@@ -80,4 +79,9 @@ function _docker_ssh() {
   if [ "$#" -eq 1 ]; then
     docker exec -it $1 bash
   fi
+}
+
+# Homestead commands
+function homestead() {
+  ( cd ~/Homestead && vagrant $* )
 }
