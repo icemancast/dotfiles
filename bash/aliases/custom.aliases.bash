@@ -34,17 +34,13 @@ alias ssh-compile='echo -n > ~/.ssh/config && cat ~/.ssh/config.d/* > ~/.ssh/con
 alias dv='_docker_env $1'
 alias dssh='_docker_ssh $1'
 
-# Client specific
-alias evm='cd ~/vm/sites/clients/evermarket/App/EverMarketMobile; ll; pwd'
-alias evm-start='evm; react-native start'
-alias evm-open='evm; open ~/vm/sites/clients/evermarket/App/EverMarketMobile/ios/EverMarketMobile.xcodeproj; mvi .'
-alias evm-web='cd ~/vm/sites/clients/evermarket/EvermarketWeb/Source; sudo http-server -p 443 -S -C ~/vm/sites/clients/evermarket/source_files/cert.pem  -K ~/vm/sites/clients/evermarket/source_files/key.pem'
-alias emv='evm' # Always mispelled
-
 alias behat='vendor/bin/behat'
 
 alias msv-start='docker-compose run --service-ports --rm web'
-alias msv-run='docker-compose run --rm web bundle exec $1'
+alias msv-bi='docker-compose run --rm web bundle install'
+alias msv-be='docker-compose run --rm web bundle exec $1'
+alias msv-rake='docker-compose run --rm web bundle exec rake $1'
+alias msv-rails='docker-compose run --rm web bundle exec rails $1'
 
 # Alias Functions ============================
 # Enter client site if param exists
