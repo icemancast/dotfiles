@@ -17,7 +17,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-:let g:syntastic_loc_list_height=4
+:let g:syntastic_loc_list_height=3
 
 " => Turn off auto backups
 set nobackup
@@ -48,7 +48,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 " => CTRL + P in current directory if not then .git ancestor
 let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$|bower_components|node_modules|tmp|_build'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$|bower_components|node_modules|tmp|_build|source_files|_old'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
 "|
@@ -64,4 +64,4 @@ let g:vim_markdown_folding_disabled = 1
 "|
 " ===> Gitgutter turn it on
 "|
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes

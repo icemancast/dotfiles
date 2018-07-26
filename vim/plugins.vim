@@ -56,3 +56,6 @@ Plugin 'trevordmiller/nova-vim'
 " JSX hilighting
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+
+" Vue Syntax
+Plugin 'posva/vim-vue'

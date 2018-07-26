@@ -1,7 +1,8 @@
 alias ll='ls -lahG'
 
 # Macvim inside terminal
-alias mvi='mvim -v'
+#alias mvi='mvim -v'
+alias v.='mvim $(pwd)'
 
 # Change directories
 alias .='cd ..'
@@ -36,11 +37,28 @@ alias dssh='_docker_ssh $1'
 
 alias behat='vendor/bin/behat'
 
-alias msv-start='docker-compose run --service-ports --rm web'
+# Massventure
+alias msv='massventure_init'
+alias msv-start='massventure_init; docker-compose run --service-ports --rm web'
 alias msv-bi='docker-compose run --rm web bundle install'
 alias msv-be='docker-compose run --rm web bundle exec $1'
+alias msv-rspec='docker-compose run --rm web bundle exec rspec'
 alias msv-rake='docker-compose run --rm web bundle exec rake $1'
 alias msv-rails='docker-compose run --rm web bundle exec rails $1'
+
+# Mouse
+alias mouse='cd ~/develop/mod-labs/mouse_platform'
+alias mouse-start='mouse; subl .; gulp watch'
+
+# Door Of Clubs
+alias door='cd ~/develop/doorofclubs/doorapp'
+alias door-start='door; subl .; gulp watch'
+
+# React Native
+alias ios-simulator="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/"
+
+# Laravel development
+alias artisan='php artisan $1'
 
 # Alias Functions ============================
 # Enter client site if param exists
@@ -80,4 +98,12 @@ function _docker_ssh() {
 # Homestead commands
 function homestead() {
   ( cd ~/Homestead && vagrant $* )
+}
+
+# Massventure setup
+function massventure_init() {
+    cd ~/develop/massventure/application;
+    docker-machine stop massventure;
+    docker-machine start massventure;
+    dv massventure;
 }
