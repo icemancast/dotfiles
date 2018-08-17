@@ -11,6 +11,7 @@ alias ...='cd ../../..'
 
 # Misc aliases
 alias projects='_cd_project $1'
+alias dev='_cd_develop $1'
 alias homestead='cd ~/Homestead; ll; pwd'
 alias wpt='_cd_wp'
 alias dotfiles='cd ~/dotfiles; mvi .';
@@ -27,6 +28,7 @@ alias gs='git status'
 alias gco='git co $1'
 alias gc='git commit -m $1'
 alias gm='git merge $1'
+alias gpo='git push origin $1'
 
 # SSH alias
 alias ssh-compile='echo -n > ~/.ssh/config && cat ~/.ssh/config.d/* > ~/.ssh/config'
@@ -47,8 +49,8 @@ alias msv-rake='docker-compose run --rm web bundle exec rake $1'
 alias msv-rails='docker-compose run --rm web bundle exec rails $1'
 
 # Mouse
-alias mouse='cd ~/develop/mod-labs/mouse_platform'
-alias mouse-start='mouse; subl .; gulp watch'
+alias ms='cd ~/develop/mod-labs/mouse_platform'
+alias ms-start='mouse; subl .; gulp watch'
 
 # Door Of Clubs
 alias door='cd ~/develop/doorofclubs/doorapp'
@@ -69,6 +71,15 @@ function _cd_project() {
     cd ~/projects/$1/$2;
   fi
   pwd && ll;
+}
+
+# Alias Functions ============================
+# Enter client site if param exists
+function _cd_develop() {
+    if [ "$#" -eq 1 ]; then
+        cd ~/develop/$1;
+        pwd && ll;
+    fi
 }
 
 # Enter theme directory once inside
