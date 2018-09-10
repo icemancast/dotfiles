@@ -30,6 +30,9 @@ alias gc='git commit -m $1'
 alias gm='git merge $1'
 alias gpo='git push origin $1'
 
+# Count lines of code
+alias count='git ls-files | xargs wc -l'
+
 # SSH alias
 alias ssh-compile='echo -n > ~/.ssh/config && cat ~/.ssh/config.d/* > ~/.ssh/config'
 
