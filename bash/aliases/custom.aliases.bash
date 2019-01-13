@@ -44,12 +44,17 @@ alias dssh='_docker_ssh $1'
 source $HOME/dotfiles/bash/aliases/clients/mod.bash
 source $HOME/dotfiles/bash/aliases/clients/massventure.bash
 source $HOME/dotfiles/bash/aliases/clients/door.bash
+source $HOME/dotfiles/bash/aliases/clients/ritetrade.bash
 
 # React Native
 alias ios-simulator="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/"
 
 # Laravel development
 alias artisan='php artisan $1'
+alias phpunit='./vendor/bin/phpunit $1'
+
+# Clean react native app
+alias clean-rn='watchman watch-del-all && rm -rf node_modules && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/npm-* && rm -rf android/build && rm -rf ios/build && yarn cache clean'
 
 # Alias Functions ============================
 # Enter client site if param exists
