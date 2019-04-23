@@ -57,6 +57,9 @@ alias phpunit='./vendor/bin/phpunit $1'
 # Clean react native app
 alias clean-rn='watchman watch-del-all && rm -rf node_modules && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/npm-* && rm -rf android/build && rm -rf ios/build && yarn cache clean'
 
+# Open android
+alias android='/Users/icemancast/Library/Android/sdk/emulator/emulator @Nexus_6_API_28'
+
 # Alias Functions ============================
 # Enter client site if param exists
 function _cd_project() {
