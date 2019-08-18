@@ -53,6 +53,7 @@ alias ios-simulator="open /Applications/Xcode.app/Contents/Developer/Application
 # Laravel development
 alias artisan='php artisan $1'
 alias phpunit='./vendor/bin/phpunit $1'
+alias pf='phpunit --filter'
 
 # Clean react native app
 alias clean-rn='watchman watch-del-all && rm -rf node_modules && rm -rf $TMPDIR/react-* && rm -rf $TMPDIR/npm-* && rm -rf android/build && rm -rf ios/build && yarn cache clean'
