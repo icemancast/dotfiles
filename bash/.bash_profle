@@ -82,18 +82,18 @@ function _create_site() {
   create-site
 }
 
+# Load rbenv automatically by appending
+# the following to ~/.bash_profile:
+
+eval "$(rbenv init -)"
+
 PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 PATH="~/.composer/vendor/bin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# Set rbenv up
-export RBENV_ROOT="$HOME/.rbenv"
-
 export EDITOR='vim'
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
 # if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
