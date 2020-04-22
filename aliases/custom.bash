@@ -41,11 +41,9 @@ alias dv='_docker_env $1'
 alias dssh='_docker_ssh $1'
 
 # Client aliases
-source $HOME/dotfiles/bash/aliases/clients/mod.bash
-source $HOME/dotfiles/bash/aliases/clients/massventure.bash
-source $HOME/dotfiles/bash/aliases/clients/door.bash
-source $HOME/dotfiles/bash/aliases/clients/ritetrade.bash
-source $HOME/dotfiles/bash/aliases/echo/echods.bash
+source $HOME/dotfiles/aliases/clients/mod.bash
+source $HOME/dotfiles/aliases/clients/ritetrade.bash
+source $HOME/dotfiles/aliases/echo/echods.bash
 
 # React Native
 alias ios-simulator="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/"
