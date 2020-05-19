@@ -78,7 +78,7 @@ source $ZSH/oh-my-zsh.sh
 unset MAILCHECK
 
 # export MANPATH="/usr/local/man:$MANPATH"
-PATH="~/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 export EDITOR='vim'
 
