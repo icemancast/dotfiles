@@ -2,7 +2,11 @@
 
 ## Files & Paths
 
-_Last updated: 2016-02-25_
+_Last updated: 2024-04-17_
+
+```
+ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+```
 
 - ssh/config => ~/.ssh/config
 - user/.bash_profile => ~/.bash_profile
