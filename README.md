@@ -6,6 +6,7 @@ _Last updated: 2024-04-17_
 
 ```
 ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/dotfiles/zsh/.zprofile ~/.zprofile
 ```
 
 - ssh/config => ~/.ssh/config
