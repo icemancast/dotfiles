@@ -1,1 +1,0 @@
-alias echologs='scp -r forge@165.227.193.132:/home/forge/clients.echods.com/storage/logs /Users/icemancast/develop/echods/logs'
